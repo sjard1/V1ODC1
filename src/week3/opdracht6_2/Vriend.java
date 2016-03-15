@@ -12,9 +12,23 @@ public class Vriend {
 		email = e;
 	}
 	
-	public boolean equals(Object andereObject){return (boolean) andereObject;}
-}
+	public boolean equals(Object andereObject){
+		boolean gelijkeObjecten = false;
+	
+	if (andereObject instanceof Vriend) {
+		Vriend andereVriend = (Vriend) andereObject;
+	
+		if (this.voornaam.equals(andereVriend.voornaam) &&
+			this.achternaam.equals(andereVriend.achternaam) &&
+			this.email.equals(andereVriend.email)){
+			
+			gelijkeObjecten = true;
+		}
+	}
+	return gelijkeObjecten;
+	}
 
 	public String toString(){
-		return toString();
+		return voornaam + " " + achternaam + " " + email;}
 	}
+

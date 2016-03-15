@@ -17,10 +17,9 @@ public class FacebookAccount {
 		mijnVrienden.add(nwV);
 	}
 
-	
-//	public boolean verwijderVriend(Vriend exV){
-//		if 
-//	}
+	public int aantalVrienden(){
+		return mijnVrienden.size();
+	}
 	
 	
 }

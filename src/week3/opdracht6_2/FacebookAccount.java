@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class FacebookAccount {
 
 	private String naam;
-	private ArrayList<Vriend> vriend;
+	private Vriend vriend;
 	
 	public FacebookAccount(String nm){
 		naam = nm;

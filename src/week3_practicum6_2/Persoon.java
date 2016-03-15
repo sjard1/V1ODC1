@@ -1,4 +1,4 @@
-package practicum6_2;
+ package week3_practicum6_2;
 
 import java.util.ArrayList;
 

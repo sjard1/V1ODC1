@@ -13,6 +13,6 @@ public class Main {
 		account.VoegVriendToe(v3);
 		
 		int aantal = account.aantalVrienden();
-		System.out.println("Account werkt" + (aantal==3 ? "" : "niet") + "!");
+		System.out.println("Account werkt" + (aantal == 3 ? "" : "niet") + "!");
 	}
 }
