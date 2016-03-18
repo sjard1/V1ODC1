@@ -33,3 +33,8 @@ public class Student {
 		return s;
 	}
 }
+
+//public String toString1(){
+//	String opleiding = mijnOpleiding == null ? "nog geen opleiding " : "de opleiding";
+//	return opleiding;
+

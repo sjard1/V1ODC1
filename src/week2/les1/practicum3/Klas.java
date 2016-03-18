@@ -21,10 +21,8 @@ public class Klas {
 	
 	public void wijzigCijfer(String nm, Double nweCijfer)
 	{
-		for(Leerling leerling : getLeerlingen())
-		{
-			if(leerling.getNaam() == nm)
-			{
+		for(Leerling leerling : getLeerlingen())		{
+			if(leerling.getNaam() == nm)			{
 				leerling.setCijfer(nweCijfer);
 			}
 		}
@@ -40,6 +38,7 @@ public class Klas {
 		return getLeerlingen().size();
 	}
 	
+	// eerst returnString daarna itereert leerling door de lijst met de methode getLeerlingen wat de lijst leerlingen terug geeft
 	public String toString()
 	{
 		String returnString = "In klas " + klasCode + " zitten de volgende leerlingen: \n";

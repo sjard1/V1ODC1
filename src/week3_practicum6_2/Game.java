@@ -19,12 +19,19 @@ public class Game {
 		int jaar = LocalDate.now().getYear();
 		int verschilInJaar = jaar - releaseJaar;
 		double prijs = getPrijs();
-		for(int i = 0; i < verschilInJaar; i++)
-		{
+		for(int i = 0; i < verschilInJaar; i++)		{
 			prijs = prijs * 0.7;
 		}
 		return Math.round(prijs );
-	}
+		// zelfde als:
+	}	
+//	public double huidigeWaarde1(){
+//		double waarde;
+//		waarde = Math.pow(0.7, LocalDate.now().getYear() - releaseJaar) * nieuwPrijs;
+//			return waarde;
+//		}
+	
+	
 	
 	public double getPrijs(){return nieuwPrijs;	}
 
@@ -37,6 +44,7 @@ public class Game {
 		
 		if(andereObject instanceof Game){
 			Game andereGame = (Game) andereObject;
+			
 			if(this.naam.equals(andereGame.naam)&&
 					this.releaseJaar == andereGame.releaseJaar &&
 					this.nieuwPrijs == andereGame.nieuwPrijs){
