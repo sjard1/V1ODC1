@@ -1,7 +1,6 @@
 package week4_practicum3;
 import java.time.LocalDate;
 
-
 public class Boeking {
 	private LocalDate boekDatum, aankomstDatum, vertrekDatum;
 	private Klant deBoeker;
